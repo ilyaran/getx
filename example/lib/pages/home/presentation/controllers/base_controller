@@ -1,0 +1,44 @@
+import 'package:get/get.dart';
+
+class SuperController<T> extends GetxController with StateMixin<T> {
+  @override
+  void onInit() {}
+
+  @override
+  void onReady() {}
+
+  @override
+  void onClose() {}
+
+  @override
+  void didChangeMetrics() {}
+
+  @override
+  void didChangePlatformBrightness() {}
+
+  @override
+  Future<bool> didPushRoute(String route) {}
+
+  @override
+  Future<bool> didPopRoute() {}
+
+  @override
+  void onDetached() {
+    print('onDetached called');
+  }
+
+  @override
+  void onInactive() {
+    print('onInative called');
+  }
+
+  @override
+  void onPaused() {
+    print('onPaused called');
+  }
+
+  @override
+  void onResumed() {
+    print('onResumed called');
+  }
+}
